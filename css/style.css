@@ -1,0 +1,78 @@
+/* This code is used for browsers that do not support HTML5*/
+article,
+section,
+aside,
+hgroup,
+nav,
+header,
+footer,
+figure,
+figcaption {
+  display: block;
+}
+
+[class*="zocial-"]:before {
+  color: skyblue;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  /*text-shadow: 3px 3px 3px #aaa;*/
+  /*width: 2em;*/
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #2d3c49;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.text-muted {
+	color: #007acc;
+}
+
+.title-super {
+	font-size: 60px;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.social-media {
+  padding-left: 10px;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  /* Set the hr color */
+  color: #007acc; /* old IE */
+  background-color: #007acc; /* Modern Browsers */
+}
+
+footer{
+  margin-top: 20px;
+  padding: 10px;
+  color: white; /* old IE */
+  background-color: #331a00; /* Modern Browsers */
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+  }
+
+  .social-media {
+    padding-right: 5px;
+    padding-left: 0;
+  }
+}
+
